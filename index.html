@@ -5,8 +5,74 @@
 
     <style>
         /* All CSS goes here. */
+
+
         body {
-            background-color: #212c36;
+            background: rgb(161, 164, 183);
+            color: rgb(45, 45, 45);
+            padding: 10px;
+            font-family: arial;
+        }
+
+        #all-contents {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* navigation menu */
+        nav {
+            background: rgb(76, 87, 104);
+            margin: 0 auto;
+            margin-bottom: 15px;
+            display: flex;
+            padding: 10px;
+        }
+
+        nav h1 {
+            display: flex;
+            align-items: center;
+            color: rgb(254, 255, 255);
+            flex: 1;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-image: none;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* main container area beneath menu */
+        main {
+            background: rgb(245, 238, 219);
+            display: flex;
+        }
+
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+
+        .sidebar img {
+            width: 500px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+
+        h2,
+        h3 {
+            margin: 0px;
         }
     </style>
 
@@ -15,7 +81,7 @@
 
 <body>
 
-    <div>
+    <div id="all-contents">
 
         <nav>
             <h1> Best Website :] </h1>
@@ -23,10 +89,10 @@
 
                 <li>
                     <a href="index.html"> Home </a>
-</li> 
+                </li>
 
-<li> 
-<a href="portfolio.html"> Portfolio </a>
+                <li>
+                    <a href="portfolio.html"> Portfolio </a>
                 </li>
 
             </ul>
@@ -35,9 +101,9 @@
 
         <main>
             <!-- Sidebar Section -->
-            <div>
+            <div class=sidebar>
 
-                <img src="https://i.ytimg.com/vi/oGBm5nb40j8/maxresdefault.jpg" alt="">
+                <img class="sidebar-img" src="https://i.ytimg.com/vi/oGBm5nb40j8/maxresdefault.jpg" alt="">
             </div>
 
             <!-- Content Section -->
