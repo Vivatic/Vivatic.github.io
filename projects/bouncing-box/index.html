@@ -6,10 +6,10 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
-			font-size: 300%;
+			width: 100px;
+			height: 100px;
+			background-color: rgb(238, 238, 238);
+			font-size: 250%;
 			text-align: center;
 			display: block;
 			position: absolute;
@@ -49,6 +49,7 @@
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
+				box.css("width",Math.random()*50+150)
 			}
 
 			// changes the text displayed on the Box
@@ -61,17 +62,19 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
 
-			
+			var positionX = 0
+			var points = 0
+			var speed = 30
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
 			function update() {
-				
-
+			positionX = positionX +speed; 	
+			moveBoxTo(positionX)	
+			s
 			};
 
 			/* 
@@ -80,9 +83,12 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
-
-
+			// positionX = Math.random()*0;	
+			// position for whever I want to click by random ^^
+			positionX = 0;
+			points = points +10	
+			changeBoxText(points);
+			speed = speed + 3
 			};
 		})();
 	</script>
