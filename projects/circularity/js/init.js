@@ -40,6 +40,9 @@ var init = function (window) {
         drawCircle();
         drawCircle();
         
+        for (var i = 0; i <= 100; i++){
+            drawCircle([i])
+        }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -58,6 +61,9 @@ var init = function (window) {
  	        physikz.updatePosition( circles[3]);
  	        physikz.updatePosition( circles[4]);
 
+            for (var i = 0; i<= 100; i++) {
+                physikz.updatePosition(circles[i] );
+            }
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
             game.checkCirclePosition(circles[0]);
             game.checkCirclePosition(circles[1]);
